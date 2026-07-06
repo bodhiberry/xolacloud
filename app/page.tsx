@@ -1,9 +1,15 @@
-const LOGIN_URL = "https://app.xolacloud.com/login";
+"use client";
 
+import { useState } from "react";
+import ContactForm from "@/components/ContactForm";
+
+const LOGIN_URL = "https://app.xolacloud.com/login";
+const SIGNUP_URL ="https://app.xolacloud.com/signup";
 const NAV_LINKS = [
-  { label: "FAQ", href: "#faq" },
   { label: "Features", href: "#features" },
   { label: "How It Works", href: "#how-it-works" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Contact", href: "#contact" },
 ];
 
 const FEATURES = [
@@ -146,11 +152,14 @@ function ConsultIllustration() {
 }
 
 export default function Home() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   return (
     <main className="min-h-screen bg-white text-ink">
       <header className="sticky top-0 z-30 border-b border-line bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <Logo />
+          {/* Desktop nav */}
           <nav className="hidden items-center gap-8 font-body text-sm font-medium text-ink/70 md:flex">
             {NAV_LINKS.map((l) => (
               <a key={l.href} href={l.href} className="transition hover:text-ink">
@@ -158,18 +167,70 @@ export default function Home() {
               </a>
             ))}
           </nav>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-4">
             <a href={LOGIN_URL} className="hidden font-body text-sm font-medium text-ink/70 transition hover:text-ink sm:inline">
               Sign in
             </a>
-            <a
-              href={LOGIN_URL}
-              className="rounded-md bg-plum px-5 py-2.5 font-display text-sm font-semibold text-white transition hover:bg-plum-dark"
-            >
-              Try it free
+             <a href={SIGNUP_URL} className="hidden font-body text-sm font-medium text-ink/70 transition hover:text-ink sm:inline">
             </a>
+            <a
+              href={SIGNUP_URL}
+              className="hidden rounded-md bg-plum px-5 py-2.5 font-display text-sm font-semibold text-white transition hover:bg-plum-dark sm:inline-block"
+            >
+                            Sign Up
+& Try it free
+            </a>
+            {/* Hamburger button */}
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="relative z-50 flex h-10 w-10 items-center justify-center rounded-md border border-line md:hidden"
+              aria-label="Toggle menu"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                {mobileOpen ? (
+                  <>
+                    <path d="M18 6 6 18" />
+                    <path d="m6 6 12 12" />
+                  </>
+                ) : (
+                  <>
+                    <path d="M4 6h16" />
+                    <path d="M4 12h16" />
+                    <path d="M4 18h16" />
+                  </>
+                )}
+              </svg>
+            </button>
           </div>
         </div>
+
+        {/* Mobile nav overlay */}
+        {mobileOpen && (
+          <div className="absolute inset-x-0 top-full z-40 border-b border-line bg-white px-6 pb-6 pt-2 shadow-lg md:hidden">
+            <nav className="flex flex-col gap-1">
+              {NAV_LINKS.map((l) => (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="rounded-md px-3 py-2.5 font-body text-sm font-medium text-ink/70 transition hover:bg-mist hover:text-ink"
+                >
+                  {l.label}
+                </a>
+              ))}
+              <div className="dashed-rule my-3 text-line" />
+              <a href={LOGIN_URL} className="rounded-md px-3 py-2.5 font-body text-sm font-medium text-ink/70 transition hover:bg-mist hover:text-ink">
+                Sign in
+              </a>
+              <a
+                href={LOGIN_URL}
+                className="mt-1 rounded-md bg-plum px-5 py-3 text-center font-display text-sm font-semibold text-white transition hover:bg-plum-dark"
+              >
+                Try it free
+              </a>
+            </nav>
+          </div>
+        )}
       </header>
 
       <section className="px-6 pb-16 pt-20 text-center sm:pt-28">
@@ -190,7 +251,7 @@ export default function Home() {
             Start now - it&apos;s free
           </a>
           <a
-            href="mailto:hello@xolacloud.com"
+            href="mailto:infobodhiberry@gmail.com"
             className="rounded-md bg-mist px-7 py-3 font-display text-sm font-semibold text-ink transition hover:bg-line"
           >
             Meet an advisor
@@ -236,7 +297,7 @@ export default function Home() {
       {/* Updated Nepal Phone Number */}
       <p className="font-display text-xl font-semibold text-forest">+977 9851058472</p>
       <a
-        href="mailto:hello@xolacloud.com"
+        href="mailto:infobodhiberry@gmail.com"
         className="mt-6 inline-block rounded-md border border-forest px-6 py-3 font-display text-sm font-semibold text-forest transition hover:bg-forest hover:text-white"
       >
         Schedule a call
@@ -314,6 +375,40 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="contact" className="border-t border-line bg-mist px-6 py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-14 lg:grid-cols-2">
+            <div>
+              <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-sky">Get in touch</p>
+              <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+                Ready to transform your operations?
+              </h2>
+              <p className="mt-6 font-body text-base leading-relaxed text-ink/60">
+                Have questions about custom integrations, hardware compatibility, or multi-tenant deployments?
+                Drop us a message, and our product team will get back to you shortly.
+              </p>
+
+              <div className="mt-10 space-y-6">
+                <div>
+                  <p className="font-display text-xs font-semibold uppercase tracking-widest text-ink/40">Email us</p>
+                  <a href="mailto:infobodhiberry@gmail.com" className="mt-1 inline-block font-body text-base font-medium text-plum hover:underline">
+                    infobodhiberry@gmail.com
+                  </a>
+                </div>
+                <div>
+                  <p className="font-display text-xs font-semibold uppercase tracking-widest text-ink/40">Call support</p>
+                  <p className="mt-1 font-body text-base font-medium text-ink">+977 9851058472</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-line bg-white p-8 shadow-sm">
+              <ContactForm />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="border-t border-line bg-mist px-6 py-14">
         <div className="mx-auto grid max-w-6xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -334,7 +429,7 @@ export default function Home() {
           <div>
             <p className="font-display text-xs font-semibold uppercase tracking-widest text-ink/40">Company</p>
             <ul className="mt-4 space-y-2 font-body text-sm text-ink/70">
-              <li><a href="mailto:hello@xolacloud.com" className="hover:text-ink">Contact</a></li>
+              <li><a href="#contact" className="hover:text-ink">Contact</a></li>
               <li><a href={LOGIN_URL} className="hover:text-ink">Sign in</a></li>
             </ul>
           </div>
