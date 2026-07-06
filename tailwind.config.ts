@@ -8,49 +8,30 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#14213D",
-        inkSoft: "#1D2E52",
-        paper: "#FBF6EC",
-        paperDim: "#F3ECDC",
-        flame: "#E85D2F",
-        flameDark: "#C4451F",
-        kitchen: "#1F7A5C",
-        char: "#232323",
-        steel: "#8B8D97",
-        line: "#E4DCC8",
-        lineDark: "#324577",
+        plum: {
+          DEFAULT: "#4A2447",
+          dark: "#341732",
+          light: "#6B3F67",
+        },
+        forest: {
+          DEFAULT: "#1E7145",
+          dark: "#14512F",
+        },
+        sky: "#2F9BE0",
+        sun: "#F2A93B",
+        ink: "#141416",
+        paper: "#FFFFFF",
+        mist: "#F6F5F3",
+        line: "#E7E5E1",
       },
       fontFamily: {
         display: ["var(--font-display)"],
-        body: ["var(--font-body)"],
+        script: ["var(--font-script)"],
         mono: ["var(--font-mono)"],
-      },
-      fontWeight: {
-        "500": "500",
-        "600": "600",
-        "700": "700",
+        body: ["var(--font-body)"],
       },
       backgroundImage: {
-        "grain": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E\")",
-      },
-      keyframes: {
-        printLine: {
-          "0%": { opacity: "0", transform: "translateY(6px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        rise: {
-          "0%": { opacity: "0", transform: "translateY(14px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        blink: {
-          "0%, 100%": { opacity: "1" },
-          "50%": { opacity: "0.25" },
-        },
-      },
-      animation: {
-        printLine: "printLine 0.5s ease-out forwards",
-        rise: "rise 0.7s cubic-bezier(0.16,1,0.3,1) forwards",
-        blink: "blink 1.6s ease-in-out infinite",
+        "grain": "url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"120\"><filter id=\"n\"><feTurbulence type=\"fractalNoise\" baseFrequency=\"0.9\" numOctaves=\"2\" stitchTiles=\"stitch\"/></filter><rect width=\"100%\" height=\"100%\" filter=\"url(%23n)\" opacity=\"0.035\"/></svg>')",
       },
     },
   },
