@@ -38,7 +38,7 @@ export default function Footer() {
               <ul className="mt-3 space-y-2 text-sm text-char/65">
                 <li><a href="#" className="hover:text-ink">About</a></li>
                 <li><a href="#faq" className="hover:text-ink">FAQ</a></li>
-                <li><a href="mailto:hello@xolacloud.com" className="hover:text-ink">Contact</a></li>
+                <li><a href="mailto:infobodhiberry@gmail.com" className="hover:text-ink">Contact</a></li>
               </ul>
             </div>
             <div>
