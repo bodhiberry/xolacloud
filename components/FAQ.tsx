@@ -23,40 +23,48 @@ function Plus({ size = 18, className = "" }: { size?: number; className?: string
 
 const faqs = [
   {
-    q: "Do you offer a free trial?",
-    a: "Yes! We offer a 1-month free demo account so you can explore Xola POS & ERP and experience its features before subscribing.",
+    q: "What is included in your Restaurant POS & ERP system?",
+    a: "A complete platform covering point of sale, table and order management, inventory and purchasing, kitchen operations, staff management, customer loyalty, reporting, online ordering, and multi-tenant architecture — all from a single login.",
   },
   {
-    q: "What's included in the free demo?",
-    a: "The demo gives you access to Xola's core features, including POS, inventory management, staff management, reporting, and more. Our team will also help you with the initial setup.",
+    q: "Can I manage multiple restaurant locations from one account?",
+    a: "Yes. You can manage one location or hundreds of restaurants from a single login. Every tenant operates in a secure, isolated workspace with complete control over their own data.",
   },
   {
-    q: "Is Xola cloud-based?",
-    a: "Yes. Xola is a fully cloud-based POS & ERP system, allowing you to access your business securely from anywhere with an internet connection.",
+    q: "What can the Point of Sale handle?",
+    a: "Our POS processes orders in seconds with a fast, intuitive interface. It supports dine-in, takeaway, delivery, split bills, discounts, modifiers, and offline operation across any device.",
   },
   {
-    q: "Can I manage multiple branches?",
-    a: "Absolutely. Xola is designed for single restaurants, cafés, multiple branches, and franchises. Manage all your locations from one centralized dashboard.",
+    q: "How does table and order management work?",
+    a: "You can manage tables, reservations, QR ordering, kitchen tickets, and real-time order tracking to deliver a seamless dining experience from start to finish.",
   },
   {
-    q: "Can I access Xola from any device?",
-    a: "Yes. Xola works on desktops, laptops, tablets, and mobile devices through a modern web browser—no software installation required.",
+    q: "Does the system help with inventory and purchasing?",
+    a: "Yes. Track ingredients and stock in real time, automate purchase orders, monitor supplier transactions, reduce waste, and receive low-stock alerts automatically.",
   },
   {
-    q: "Can I migrate from my current POS?",
-    a: "Yes. Our team can help you import your menu, inventory, customers, and other supported business data for a smooth transition.",
+    q: "What kitchen tools are included?",
+    a: "A Kitchen Display System (KDS) streamlines food preparation with order prioritization and real-time communication between the front of house and kitchen.",
   },
   {
-    q: "Do you provide training and support?",
-    a: "Yes. We provide onboarding, training, and ongoing support to ensure you get the most out of Xola.",
+    q: "Can I manage staff schedules and payroll?",
+    a: "Yes. Schedule shifts, assign roles and permissions, track attendance, manage payroll exports, and monitor staff performance, all in one place.",
   },
   {
-    q: "Is my data secure?",
-    a: "Yes. Each business has its own secure workspace with isolated data, regular backups, and role-based access controls to keep your information safe.",
+    q: "Does it support customer loyalty and promotions?",
+    a: "You can build customer profiles, run loyalty points and rewards programs, manage promotions and gift cards, and access full purchase history.",
   },
   {
-    q: "How do I get my free demo account?",
-    a: "Simply contact us or click Request a Free Demo. We'll create your 1-month free demo account so you can explore Xola with no obligation.",
+    q: "What kind of reporting and analytics are available?",
+    a: "Access real-time sales, inventory, customer, and financial reports. Business owners get detailed insights, while administrators can monitor all tenants from one centralized dashboard.",
+  },
+  {
+    q: "Can I accept online orders and multiple payment methods?",
+    a: "Yes. Accept online orders, integrate with delivery platforms, process multiple payment methods, and keep every transaction synchronized in one system.",
+  },
+  {
+    q: "How does the multi-tenant architecture work?",
+    a: "Each restaurant, café, or franchise operates in its own secure, isolated environment, while administrators can manage every tenant, branch, and brand from a single platform.",
   },
 ];
 
