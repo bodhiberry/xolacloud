@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 
 function Plus({ size = 18, className = "" }: { size?: number; className?: string }) {
@@ -24,30 +23,45 @@ function Plus({ size = 18, className = "" }: { size?: number; className?: string
 
 const faqs = [
   {
-    q: "Does billing still work if the internet goes down?",
-    a: "Yes. The counter keeps billing on the local device and syncs every order to your dashboard automatically once the connection returns.",
+    q: "Do you offer a free trial?",
+    a: "Yes! We offer a 1-month free demo account so you can explore Xola POS & ERP and experience its features before subscribing.",
   },
   {
-    q: "Can each branch have its own menu and prices?",
-    a: "Yes. Set a shared menu across all branches, or override items and prices per branch — both from the same account.",
+    q: "What's included in the free demo?",
+    a: "The demo gives you access to Xola's core features, including POS, inventory management, staff management, reporting, and more. Our team will also help you with the initial setup.",
   },
   {
-    q: "What payment methods are supported?",
-    a: "Cash, card, eSewa, and Khalti are built in at the till, alongside custom payment types you can add for vouchers or credit accounts.",
+    q: "Is Xola cloud-based?",
+    a: "Yes. Xola is a fully cloud-based POS & ERP system, allowing you to access your business securely from anywhere with an internet connection.",
   },
   {
-    q: "Can I move my existing menu and stock data in?",
-    a: "Yes. Our onboarding team imports your existing menu, pricing, and stock counts from a spreadsheet or your current POS export.",
+    q: "Can I manage multiple branches?",
+    a: "Absolutely. Xola is designed for single restaurants, cafés, multiple branches, and franchises. Manage all your locations from one centralized dashboard.",
   },
   {
-    q: "Is there a contract or can I cancel anytime?",
-    a: "Plans are billed monthly with no lock-in contract. You can add, remove, or cancel a branch at any time from your dashboard.",
+    q: "Can I access Xola from any device?",
+    a: "Yes. Xola works on desktops, laptops, tablets, and mobile devices through a modern web browser—no software installation required.",
+  },
+  {
+    q: "Can I migrate from my current POS?",
+    a: "Yes. Our team can help you import your menu, inventory, customers, and other supported business data for a smooth transition.",
+  },
+  {
+    q: "Do you provide training and support?",
+    a: "Yes. We provide onboarding, training, and ongoing support to ensure you get the most out of Xola.",
+  },
+  {
+    q: "Is my data secure?",
+    a: "Yes. Each business has its own secure workspace with isolated data, regular backups, and role-based access controls to keep your information safe.",
+  },
+  {
+    q: "How do I get my free demo account?",
+    a: "Simply contact us or click Request a Free Demo. We'll create your 1-month free demo account so you can explore Xola with no obligation.",
   },
 ];
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-
   return (
     <section id="faq" className="mx-auto max-w-3xl px-6 py-24">
       <div className="text-center">
@@ -55,10 +69,9 @@ export default function FAQ() {
           Questions
         </span>
         <h2 className="mt-3 font-display text-3xl font-700 tracking-tight text-ink sm:text-4xl">
-          Before you start the trial
+          Frequently Asked Questions
         </h2>
       </div>
-
       <div className="mt-12 divide-y divide-line border-y border-line">
         {faqs.map((f, i) => {
           const isOpen = openIndex === i;

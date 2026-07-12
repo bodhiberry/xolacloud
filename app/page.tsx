@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import ContactForm from "@/components/ContactForm";
-
+import WelcomeModal from "@/components/WelcomeModal";
+import Image from "next/image";
+import { motion } from "framer-motion";
 const LOGIN_URL = "https://app.xolacloud.com/login";
 const SIGNUP_URL ="https://app.xolacloud.com/signup";
 const NAV_LINKS = [
@@ -156,6 +158,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white text-ink">
+      <WelcomeModal/>
       <header className="sticky top-0 z-30 border-b border-line bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <Logo />
@@ -233,7 +236,7 @@ export default function Home() {
         )}
       </header>
 
-      <section className="px-6 pb-16 pt-20 text-center sm:pt-28">
+<section className="px-6 pb-16 pt-20 text-center sm:pt-28">
         <h1 className="mx-auto max-w-3xl font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
           <span className="font-script text-5xl font-semibold text-sky sm:text-6xl">All-in-one</span>{" "}
           <span className="text-ink">multi-tenant POS &amp; ERP</span>
@@ -258,8 +261,58 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="mt-16">
-          <POSPreview />
+        {/* Real product screenshots, replacing POSPreview */}
+        <div className="relative mx-auto mt-20 w-full max-w-3xl px-6 pb-16 sm:px-10">
+          {/* Back screenshot: table/floor view */}
+          <motion.div
+            initial={{ opacity: 0, y: 24, rotate: -2 }}
+            whileInView={{ opacity: 1, y: 0, rotate: -2 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            className="relative mx-auto w-[90%] overflow-hidden rounded-xl border border-line bg-white text-left shadow-[0_25px_60px_-20px_rgba(20,33,61,0.35)]"
+          >
+            <div className="flex items-center gap-1.5 border-b border-line bg-mist px-3 py-2">
+              <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
+              <span className="h-2.5 w-2.5 rounded-full bg-yellow-400" />
+              <span className="h-2.5 w-2.5 rounded-full bg-green-400" />
+              <span className="ml-3 font-mono text-[10px] text-char/40">
+                app.xolacloud.com/orders
+              </span>
+            </div>
+            <Image
+              src="/screenshots/orders-tables.png"
+              alt="Xola floor plan showing tables grouped by area, with live status"
+              width={1660}
+              height={903}
+              className="h-auto w-full"
+              priority
+            />
+          </motion.div>
+
+          {/* Front screenshot: order/menu panel, layered on top */}
+          <motion.div
+            initial={{ opacity: 0, y: 24, rotate: 2 }}
+            whileInView={{ opacity: 1, y: 0, rotate: 2 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.25, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            className="absolute -bottom-4 left-4 w-[60%] overflow-hidden rounded-xl border border-line bg-white text-left shadow-[0_25px_60px_-20px_rgba(20,33,61,0.4)] sm:left-8 sm:w-[55%]"
+          >
+            <div className="flex items-center gap-1.5 border-b border-line bg-mist px-3 py-2">
+              <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
+              <span className="h-2.5 w-2.5 rounded-full bg-yellow-400" />
+              <span className="h-2.5 w-2.5 rounded-full bg-green-400" />
+              <span className="ml-3 font-mono text-[10px] text-char/40">
+                Outside Table-01 &middot; Menu
+              </span>
+            </div>
+            <Image
+              src="/screenshots/order-menu.png"
+              alt="Xola order screen showing the coffee menu and active order panel"
+              width={1660}
+              height={903}
+              className="h-auto w-full"
+            />
+          </motion.div>
         </div>
       </section>
 
@@ -287,23 +340,23 @@ export default function Home() {
     {/* Text Content */}
     <div>
       <h2 className="font-display text-4xl font-semibold leading-[1.1] tracking-tight text-forest sm:text-5xl">
-        Let&apos;s work together to find the right system for your business
+        Ready to Experience Xola?
       </h2>
       <p className="mt-6 max-w-md font-body text-ink/60">
-        Our onboarding specialists help you map your catalog, locations, and staff into
-        Xola before you touch a till, then stay on call 24/7/365 for every tenant you run.
+        Discover how Xola can streamline your restaurant operations, reduce costs, and improve
+        customer service. Our implementation specialists will configure your menus, tables,
+        inventory, staff, and business settings, ensuring you&apos;re ready to start selling
+        from day one. As your business grows, Xola grows with you.
       </p>
-      <p className="mt-8 font-display text-sm font-semibold text-ink/50">Call now</p>
-      {/* Updated Nepal Phone Number */}
+      <p className="mt-8 font-display text-sm font-semibold text-ink/50">Talk to Our Team</p>
       <p className="font-display text-xl font-semibold text-forest">+977 9851058472</p>
       <a
         href="mailto:infobodhiberry@gmail.com"
         className="mt-6 inline-block rounded-md border border-forest px-6 py-3 font-display text-sm font-semibold text-forest transition hover:bg-forest hover:text-white"
       >
-        Schedule a call
+        Schedule a Free Demo
       </a>
     </div>
-
     {/* Updated Image Container */}
     <div className="relative h-full w-full min-h-[400px] overflow-hidden rounded-2xl shadow-xl lg:min-h-[500px]">
       <img
