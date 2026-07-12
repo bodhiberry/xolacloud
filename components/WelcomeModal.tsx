@@ -87,28 +87,23 @@ export default function WelcomeModal() {
         </p>
 
         <div className="mt-7 flex flex-col gap-3">
-          <div className="flex flex-col gap-3 sm:flex-row">
+          <a
+            href="https://app.xolacloud.com/signup"
+            onClick={close}
+            className="inline-flex items-center justify-center rounded-lg bg-plum px-6 py-3 font-display text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+          >
+            Sign Up
+          </a>
+          <div className="flex items-center justify-center gap-2 text-sm font-body text-char/65">
+            <span>or</span>
             <a
-              href="#signup"
+              href="https://app.xolacloud.com/login"
               onClick={close}
-              className="inline-flex flex-1 items-center justify-center rounded-lg bg-plum px-6 py-3 font-display text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+              className="font-semibold text-plum hover:underline"
             >
-              Sign Up
-            </a>
-            <a
-              href="#contact"
-              onClick={close}
-              className="inline-flex flex-1 items-center justify-center rounded-lg border border-plum px-6 py-3 font-display text-sm font-semibold text-plum transition hover:bg-plum/5"
-            >
-              Request a Free Demo
+              Log In
             </a>
           </div>
-          <button
-            onClick={close}
-            className="inline-flex items-center justify-center rounded-lg px-6 py-2 font-display text-sm font-medium text-ink/50 transition hover:text-ink"
-          >
-            Maybe later
-          </button>
         </div>
       </div>
     </div>
