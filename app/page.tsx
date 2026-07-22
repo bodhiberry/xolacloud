@@ -15,7 +15,7 @@ const NAV_LINKS = [
 ];
 
 const FEATURES = [
-  { name: "Multi-tenant control", detail: "Run every location or brand from one login, each kept in its own ledger." },
+  { name: "Point of Sale", detail: "Process orders in seconds with a fast, intuitive POS. Support dine-in, takeaway, delivery, split bills, discounts, modifiers, and offline operation across any device." },
   { name: "Point of sale", detail: "Fast checkout on any device, online or offline, with split bills and modifiers." },
   { name: "Inventory & purchasing", detail: "Stock counts and supplier orders update the moment something sells." },
   { name: "Staff & scheduling", detail: "Shifts, roles, and payroll export, scoped to the right tenant automatically." },
