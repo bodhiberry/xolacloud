@@ -432,11 +432,10 @@ export default function Home() {
             <div>
               <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-sky">Get in touch</p>
               <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Ready to transform your operations?
+                Ready to Get Started with Xola?
               </h2>
               <p className="mt-6 font-body text-base leading-relaxed text-ink/60">
-                Have questions about custom integrations, hardware compatibility, or multi-tenant deployments?
-                Drop us a message, and our product team will get back to you shortly.
+                Have questions about Xola or need help choosing the right solution? Send us a message, and our team will be happy to assist you.
               </p>
 
               <div className="mt-10 space-y-6">
