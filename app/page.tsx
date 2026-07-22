@@ -252,7 +252,7 @@ export default function Home() {
             Start now - it&apos;s free
           </a>
           <a
-            href="mailto:infobodhiberry@gmail.com"
+            href="mailto:info@xolacloud.com"
             className="rounded-md bg-mist px-7 py-3 font-display text-sm font-semibold text-ink transition hover:bg-line"
           >
             Meet an advisor
