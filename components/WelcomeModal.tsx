@@ -79,7 +79,7 @@ export default function WelcomeModal() {
           id="welcome-modal-title"
           className="mt-3 font-display text-2xl font-700 tracking-tight text-ink sm:text-3xl"
         >
-          Try Xola free for 1 month
+         Try Xola for free for 3 months.
         </h2>
         <p className="mt-3 font-body text-sm leading-relaxed text-char/65">
           No card required, no obligation. Explore POS, inventory, staff
