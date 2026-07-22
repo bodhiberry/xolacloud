@@ -319,7 +319,7 @@ export default function Home() {
           <div className="mb-12 max-w-xl">
             <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-sky">Features</p>
             <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              Everything a tenant needs, in one place.
+              Everything your café or restaurant needs, in one place.
             </h2>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
