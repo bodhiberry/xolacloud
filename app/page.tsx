@@ -242,9 +242,7 @@ export default function Home() {
           <span className="text-ink">multi-tenant POS &amp; ERP</span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl font-body text-base leading-relaxed text-ink/60 sm:text-lg">
-          Xola gives every tenant a complete point of sale with inventory, staff scheduling,
-          reporting, and delivery-platform integrations — all isolated per business, all
-          reachable from one login.
+         Xola gives every business a complete POS and ERP solution with inventory management, staff scheduling, reporting, and delivery platform integrations. Each tenant's data is securely isolated, while everything is managed from a single login.
         </p>
         <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
           <a
