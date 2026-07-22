@@ -347,9 +347,9 @@ export default function Home() {
         from day one. As your business grows, Xola grows with you.
       </p>
       <p className="mt-8 font-display text-sm font-semibold text-ink/50">Talk to Our Team</p>
-      <p className="font-display text-xl font-semibold text-forest">+977 9851058472</p>
+      <p className="font-display text-xl font-semibold text-forest">+977 9763681795</p>
       <a
-        href="mailto:infobodhiberry@gmail.com"
+        href="mailto:info@xolacloud.com"
         className="mt-6 inline-block rounded-md border border-forest px-6 py-3 font-display text-sm font-semibold text-forest transition hover:bg-forest hover:text-white"
       >
         Schedule a Free Demo
