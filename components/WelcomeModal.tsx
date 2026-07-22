@@ -82,8 +82,7 @@ export default function WelcomeModal() {
          Try Xola for free for 3 months.
         </h2>
         <p className="mt-3 font-body text-sm leading-relaxed text-char/65">
-          No card required, no obligation. Explore POS, inventory, staff
-          management, and reporting, and our team will help you set it up.
+          Start your free 3-month Xola trial—no credit card required, no obligation. Explore POS, inventory, staff management, and powerful reporting with guided setup from our team.
         </p>
 
         <div className="mt-7 flex flex-col gap-3">
