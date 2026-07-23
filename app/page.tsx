@@ -69,21 +69,49 @@ const PLANS = [
 
 const FAQS = [
   {
-    q: "What does multi-tenant mean here?",
-    a: "Every business you onboard gets its own isolated catalog, staff, and books. You manage them all from one login, but no tenant ever sees another tenant's data.",
+    q: "Do you offer a free trial??",
+    a: "Yes! We offer a 1-month free demo account so you can explore Xola POS & ERP and experience its features before subscribing.",
   },
   {
-    q: "Can one tenant run several locations?",
-    a: "Yes — a tenant can hold any number of locations, each with its own till and stock, rolled up into one report for the owner.",
+    q: "What's included in the free demo?",
+    a: "The demo gives you access to Xola's core features, including POS, inventory management, staff management, reporting, and more. Our team will also help you with the initial setup.",
   },
   {
     q: "Does it work without internet?",
     a: "The till keeps ringing up sales offline and syncs everything the moment the connection comes back.",
   },
   {
-    q: "Is there a contract?",
-    a: "Monthly and yearly plans have no lock-in. The 5-year plan is a one-time payment.",
+    q: "Is Xola cloud-based??",
+    a: "Yes. Xola is a fully cloud-based POS & ERP system, allowing you to access your business securely from anywhere with an internet connection.",
   },
+  {
+    q: "Can I manage multiple branches?",
+    a: "Absolutely. Xola is designed for single restaurants, cafés, multiple branches, and franchises. Manage all your locations from one centralized dashboard.",
+  },
+
+   {
+    q: "Can I access Xola from any device?",
+    a: "Yes. Xola works on desktops, laptops, tablets, and mobile devices through a modern web browser—no software installation required.",
+  },
+
+  {
+    q: "Can I migrate from my current POS?
+    a: "Yes. Our team can help you import your menu, inventory, customers, and other supported business data for a smooth transition.",
+  },
+{
+    q: "Do you provide training and support"?
+    a: "Yes. We provide onboarding, training, and ongoing support to ensure you get the most out of Xola.",
+  },
+
+  {
+    q: "Is my data secure"?
+    a: "Yes. Each business has its own secure workspace with isolated data, regular backups, and role-based access controls to keep your information safe.",
+  },
+{
+    q: "How do I get my free demo account"?
+    a: "Simply contact us or click Request a Free Demo. We'll create your 3-months free demo account so you can explore Xola with no obligation.",
+  },
+
 ];
 
 function Logo({ dark = false }: { dark?: boolean }) {
