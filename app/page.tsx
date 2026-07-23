@@ -16,11 +16,15 @@ const NAV_LINKS = [
 
 const FEATURES = [
   { name: "Point of Sale", detail: "Process orders in seconds with a fast, intuitive POS. Support dine-in, takeaway, delivery, split bills, discounts, modifiers, and offline operation across any device." },
-  { name: "Point of sale", detail: "Fast checkout on any device, online or offline, with split bills and modifiers." },
-  { name: "Inventory & purchasing", detail: "Stock counts and supplier orders update the moment something sells." },
-  { name: "Staff & scheduling", detail: "Shifts, roles, and payroll export, scoped to the right tenant automatically." },
-  { name: "Reporting & analytics", detail: "One rolled-up view for you, a clean single-tenant view for each owner." },
-  { name: "Delivery & payments", detail: "Card payments and delivery-platform orders land straight in the same till." },
+  { name: "Table & Order Management", detail: "Manage tables, reservations, QR ordering, kitchen tickets, and real-time order tracking to deliver a seamless dining experience." },
+  { name: "Inventory & purchasing", detail: "Track ingredients and stock in real time. Automate purchase orders, monitor supplier transactions, reduce waste, and receive low-stock alerts." },
+  { name: "Kitchen Operations", detail: "Streamline food preparation with Kitchen Display System (KDS), order prioritization, and real-time communication between the front of house and kitchen." },
+  { name: "Staff & Role Management", detail: "Schedule shifts, assign roles and permissions, track attendance, manage payroll exports, and monitor staff performance." },
+  { name: "Customer & Loyalty", detail: "Build lasting customer relationships with profiles, loyalty points, rewards, promotions, gift cards, and purchase history." },
+  { name: "Reporting & Analytics", detail: "Access real-time sales, inventory, customer, and financial reports. Business owners get detailed insights, while administrators can monitor all tenants from one centralized dashboard." },
+ { name: "Online Ordering, Delivery & Payments", detail: "Accept online orders, integrate with delivery platforms, process multiple payment methods, and keep every transaction synchronized in one system." },
+{ name: "Multi-Tenant Architecture", detail: "Each restaurant, café, or franchise operates in its own secure environment with isolated data, while administrators can manage every tenant, branch, and brand from a single platform." },
+
 ];
 
 const MENU_ITEMS = [
