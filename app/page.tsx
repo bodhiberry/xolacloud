@@ -557,39 +557,119 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="border-t border-line bg-mist px-6 py-24">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid gap-14 lg:grid-cols-2">
+    <section
+  id="contact"
+  className="border-t border-line bg-gradient-to-b from-mist to-white px-6 py-28"
+>
+  <div className="mx-auto max-w-6xl">
+
+    <div className="grid items-center gap-16 lg:grid-cols-2">
+
+      {/* LEFT */}
+
+      <div>
+
+        <span className="inline-flex rounded-full bg-sky/10 px-4 py-1 text-sm font-semibold text-sky">
+          Get in Touch
+        </span>
+
+        <h2 className="mt-6 font-display text-4xl font-bold leading-tight text-ink sm:text-5xl">
+          Ready to Grow Your Business with Xola?
+        </h2>
+
+        <p className="mt-6 max-w-lg text-lg leading-8 text-ink/60">
+          Whether you're opening your first café or managing multiple restaurant
+          locations, our team is ready to help you choose the right Xola POS &
+          ERP solution.
+        </p>
+
+        <div className="mt-10 space-y-5">
+
+          <div className="flex items-center gap-4 rounded-xl border border-line bg-white p-5 shadow-sm">
+
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-plum/10">
+              📧
+            </div>
+
             <div>
-              <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-sky">Get in touch</p>
-              <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-               Ready to Get Started with Xola?
-              </h2>
-              <p className="mt-6 font-body text-base leading-relaxed text-ink/60">
-                Have questions about Xola or need help finding the right solution for your business? Send us a message, and our team will be happy to help. We'll get back to you as soon as possible.
+              <p className="text-xs uppercase tracking-widest text-ink/40">
+                Email
               </p>
 
-              <div className="mt-10 space-y-6">
-                <div>
-                  <p className="font-display text-xs font-semibold uppercase tracking-widest text-ink/40">Email us</p>
-                  <a href="mailto:info@xolacloud.com" className="mt-1 inline-block font-body text-base font-medium text-plum hover:underline">
-                    info@xolacloud.com
-                  </a>
-                </div>
-                <div>
-                  <p className="font-display text-xs font-semibold uppercase tracking-widest text-ink/40">Call support</p>
-                  <p className="mt-1 font-body text-base font-medium text-ink">+9779763681795</p>
-                </div>
-              </div>
+              <a
+                href="mailto:info@xolacloud.com"
+                className="font-semibold text-plum hover:underline"
+              >
+                info@xolacloud.com
+              </a>
             </div>
 
-            <div className="rounded-2xl border border-line bg-white p-8 shadow-sm">
-              <ContactForm />
-            </div>
           </div>
-        </div>
-      </section>
 
+          <div className="flex items-center gap-4 rounded-xl border border-line bg-white p-5 shadow-sm">
+
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-forest/10">
+              📞
+            </div>
+
+            <div>
+              <p className="text-xs uppercase tracking-widest text-ink/40">
+                Phone
+              </p>
+
+              <p className="font-semibold text-ink">
+                +977 9763681795
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div className="mt-10 rounded-2xl bg-plum p-6 text-white shadow-xl">
+
+          <p className="text-sm uppercase tracking-widest text-white/70">
+            Free Demo
+          </p>
+
+          <h3 className="mt-2 text-2xl font-bold">
+            Try Xola Free for 30 Days
+          </h3>
+
+          <p className="mt-3 text-white/80">
+            No credit card required. Experience the complete cloud POS & ERP
+            platform before making a decision.
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* RIGHT */}
+
+      <div className="rounded-3xl border border-line bg-white p-8 shadow-2xl">
+
+        <div className="mb-8">
+
+          <h3 className="font-display text-2xl font-semibold text-ink">
+            Send Us a Message
+          </h3>
+
+          <p className="mt-2 text-ink/60">
+            Fill out the form below and we'll get back to you within one business
+            day.
+          </p>
+
+        </div>
+
+        <ContactForm />
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
       <footer className="border-t border-line bg-mist px-6 py-14">
         <div className="mx-auto grid max-w-6xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
