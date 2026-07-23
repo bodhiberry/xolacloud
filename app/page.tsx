@@ -397,42 +397,145 @@ export default function Home() {
   </div>
 </section>
 
-      <section id="how-it-works" className="border-t border-line bg-mist px-6 py-24">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-14 max-w-2xl text-center sm:mx-auto">
-            <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-sky">Simple, Transparent Pricing</p>
-            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              Get start Now !!!
-            </h2>
-            <p className="mx-auto mt-4 max-w-xl font-body text-ink/60">
-              Choose the plan that's right for your business. Start with a free trial and upgrade anytime as your business grows.
-            </p>
-          </div>
-          <div className="grid gap-8 sm:grid-cols-3">
-            <div className="rounded-xl border border-line bg-white p-8 relative overflow-hidden">
-              <span className="font-mono text-5xl font-bold text-sky/10 absolute -right-2 -top-2 select-none">01</span>
-              <h3 className="font-display text-lg font-semibold text-ink">Bacis</h3>
-              <p className="mt-3 font-body text-sm leading-relaxed text-ink/60">
-               Basic: Best for small cafés and restaurants.$19/month
-              </p>
-            </div>
-            <div className="rounded-xl border border-line bg-white p-8 relative overflow-hidden">
-              <span className="font-mono text-5xl font-bold text-sky/10 absolute -right-2 -top-2 select-none">02</span>
-              <h3 className="font-display text-lg font-semibold text-ink">Business</h3>
-              <p className="mt-3 font-body text-sm leading-relaxed text-ink/60">
-               Ideal for growing cafés and restaurants with multiple locations, advanced inventory management, and enhanced business features. $39/month
-              </p>
-            </div>
-            <div className="rounded-xl border border-line bg-white p-8 relative overflow-hidden">
-              <span className="font-mono text-5xl font-bold text-sky/10 absolute -right-2 -top-2 select-none">03</span>
-              <h3 className="font-display text-lg font-semibold text-ink">Premium</h3>
-              <p className="mt-3 font-body text-sm leading-relaxed text-ink/60">
-               Perfect for large businesses requiring advanced features, custom workflows, and enterprise-level support.$69/month
-              </p>
-            </div>
-          </div>
+      <section id="pricing" className="border-t border-line bg-mist px-6 py-24">
+  <div className="mx-auto max-w-6xl">
+
+    <div className="mx-auto mb-16 max-w-2xl text-center">
+      <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-sky">
+        Simple, Transparent Pricing
+      </p>
+
+      <h2 className="mt-3 font-display text-4xl font-bold text-ink">
+        Pricing Plans
+      </h2>
+
+      <p className="mt-5 font-body text-lg text-ink/60">
+        Choose the perfect plan for your business. Start with a free trial and
+        upgrade whenever you're ready.
+      </p>
+    </div>
+
+    <div className="grid gap-8 lg:grid-cols-3">
+
+      {/* BASIC */}
+
+      <div className="group rounded-2xl border border-line bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+
+        <span className="inline-flex rounded-full bg-sky/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-sky">
+          Basic
+        </span>
+
+        <div className="mt-6">
+          <span className="font-display text-5xl font-bold text-ink">
+            $19
+          </span>
+          <span className="ml-1 text-lg text-ink/50">/month</span>
         </div>
-      </section>
+
+        <p className="mt-5 text-sm leading-6 text-ink/60">
+          Perfect for small cafés, bakeries, and restaurants starting with Xola.
+        </p>
+
+        <ul className="mt-8 space-y-3 text-sm text-ink/70">
+          <li>✓ POS & Billing</li>
+          <li>✓ Inventory Management</li>
+          <li>✓ Sales Reports</li>
+          <li>✓ Staff Management</li>
+          <li>✓ Email Support</li>
+        </ul>
+
+        <a
+          href={SIGNUP_URL}
+          className="mt-8 block rounded-lg border border-line py-3 text-center font-semibold transition hover:bg-mist"
+        >
+          Start Free Trial
+        </a>
+
+      </div>
+
+      {/* BUSINESS */}
+
+      <div className="relative scale-[1.03] rounded-2xl border-2 border-plum bg-plum p-8 text-white shadow-2xl">
+
+        <span className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-amber-400 px-4 py-1 text-xs font-bold uppercase tracking-wider text-black">
+          Most Popular
+        </span>
+
+        <span className="inline-flex rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider">
+          Business
+        </span>
+
+        <div className="mt-6">
+          <span className="font-display text-5xl font-bold">
+            $39
+          </span>
+          <span className="ml-1 text-lg text-white/70">
+            /month
+          </span>
+        </div>
+
+        <p className="mt-5 text-sm leading-6 text-white/80">
+          Built for growing cafés and restaurant chains with multiple locations.
+        </p>
+
+        <ul className="mt-8 space-y-3 text-sm">
+          <li>✓ Everything in Basic</li>
+          <li>✓ Multi-Branch Support</li>
+          <li>✓ Advanced Inventory</li>
+          <li>✓ Kitchen Display System</li>
+          <li>✓ Priority Support</li>
+        </ul>
+
+        <a
+          href={SIGNUP_URL}
+          className="mt-8 block rounded-lg bg-white py-3 text-center font-semibold text-plum transition hover:bg-gray-100"
+        >
+          Start Free Trial
+        </a>
+
+      </div>
+
+      {/* PREMIUM */}
+
+      <div className="group rounded-2xl border border-line bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+
+        <span className="inline-flex rounded-full bg-forest/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-forest">
+          Premium
+        </span>
+
+        <div className="mt-6">
+          <span className="font-display text-5xl font-bold text-ink">
+            $69
+          </span>
+          <span className="ml-1 text-lg text-ink/50">
+            /month
+          </span>
+        </div>
+
+        <p className="mt-5 text-sm leading-6 text-ink/60">
+          Designed for franchises and enterprise businesses needing maximum flexibility.
+        </p>
+
+        <ul className="mt-8 space-y-3 text-sm text-ink/70">
+          <li>✓ Everything in Business</li>
+          <li>✓ Unlimited Branches</li>
+          <li>✓ Custom Integrations</li>
+          <li>✓ API Access</li>
+          <li>✓ Dedicated Account Manager</li>
+        </ul>
+
+        <a
+          href={SIGNUP_URL}
+          className="mt-8 block rounded-lg border border-line py-3 text-center font-semibold transition hover:bg-mist"
+        >
+          Contact Sales
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
 
       <section id="faq" className="px-6 py-24">
         <div className="mx-auto max-w-3xl">
