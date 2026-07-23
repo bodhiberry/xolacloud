@@ -27,24 +27,49 @@ const bodyFont = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Xola — Multi-tenant POS & ERP for growing businesses",
+  metadataBase: new URL("https://xolacloud.com"),
+
+  title: "Xola Cloud | Restaurant POS & ERP Software for Cafés & Restaurants",
+
   description:
-    "Xola runs point of sale, inventory, staff, and reporting across every location and every tenant, from one system. Sign in or start free.",
+    "Xola Cloud is an all-in-one cloud POS & ERP for cafés, restaurants, and franchises with inventory, KDS, staff management, online ordering, reporting, and multi-tenant management.",
+
   keywords: [
-    "Xola",
-    "POS",
-    "ERP",
-    "Multi-tenant POS",
-    "Point of Sale",
+    "Xola Cloud",
+    "Xola POS",
+    "Restaurant POS Software",
+    "Restaurant ERP",
+    "Cafe POS",
+    "Cafe ERP",
     "Cloud POS",
+    "Restaurant Management Software",
     "Inventory Management",
-    "Staff Scheduling",
-    "Restaurant POS",
-    "Retail POS"
+    "Kitchen Display System",
+    "KDS",
+    "QR Ordering",
+    "Online Ordering",
+    "Delivery Integration",
+    "Staff Management",
+    "Payroll",
+    "Customer Loyalty",
+    "Restaurant Analytics",
+    "Multi-Tenant POS",
+    "Franchise POS",
+    "Hospitality Software",
+    "Restaurant Inventory Software",
+    "Cloud ERP",
+    "Restaurant Billing Software",
   ],
+
   authors: [{ name: "Xola Cloud" }],
   creator: "Xola Cloud",
   publisher: "Xola Cloud",
+  applicationName: "Xola Cloud",
+
+  alternates: {
+    canonical: "/",
+  },
+
   robots: {
     index: true,
     follow: true,
@@ -56,18 +81,22 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://xolacloud.com",
-    title: "Xola — Multi-tenant POS & ERP for growing businesses",
-    description: "Xola runs point of sale, inventory, staff, and reporting across every location and every tenant, from one system.",
-    siteName: "Xola",
+    siteName: "Xola Cloud",
+    title: "Xola Cloud | Restaurant POS & ERP Software for Cafés & Restaurants",
+    description:
+      "Xola Cloud is an all-in-one cloud POS & ERP for cafés, restaurants, and franchises with inventory, KDS, staff management, online ordering, reporting, and multi-tenant management.",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Xola — Multi-tenant POS & ERP for growing businesses",
-    description: "Xola runs point of sale, inventory, staff, and reporting across every location and every tenant, from one system.",
+    title: "Xola Cloud | Restaurant POS & ERP Software for Cafés & Restaurants",
+    description:
+      "Xola Cloud is an all-in-one cloud POS & ERP for cafés, restaurants, and franchises with inventory, KDS, staff management, online ordering, reporting, and multi-tenant management.",
   },
 };
 
