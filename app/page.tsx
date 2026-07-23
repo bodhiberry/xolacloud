@@ -9,7 +9,7 @@ const LOGIN_URL = "https://app.xolacloud.com/login";
 const SIGNUP_URL ="https://app.xolacloud.com/signup";
 const NAV_LINKS = [
   { label: "Features", href: "#features" },
-  { label: "Pricing", href: "#how-it-works" },
+  { label: "Pricing", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
