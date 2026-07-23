@@ -633,7 +633,7 @@ export default function Home() {
           </p>
 
           <h3 className="mt-2 text-2xl font-bold">
-            Try Xola Free for 30 Days
+            Try Xola Free for 90 Days
           </h3>
 
           <p className="mt-3 text-white/80">
