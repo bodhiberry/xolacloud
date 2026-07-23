@@ -187,82 +187,147 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-ink">
       <WelcomeModal/>
-      <header className="sticky top-0 z-30 border-b border-line bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <Logo />
-          {/* Desktop nav */}
-          <nav className="hidden items-center gap-8 font-body text-sm font-medium text-ink/70 md:flex">
-            {NAV_LINKS.map((l) => (
-              <a key={l.href} href={l.href} className="transition hover:text-ink">
-                {l.label}
-              </a>
-            ))}
-          </nav>
-          <div className="flex items-center gap-4">
-            <a href={LOGIN_URL} className="hidden font-body text-sm font-medium text-ink/70 transition hover:text-ink sm:inline">
-              Sign in
-            </a>
-             <a href={SIGNUP_URL} className="hidden font-body text-sm font-medium text-ink/70 transition hover:text-ink sm:inline">
-            </a>
-            <a
-              href={SIGNUP_URL}
-              className="hidden rounded-md bg-plum px-5 py-2.5 font-display text-sm font-semibold text-white transition hover:bg-plum-dark sm:inline-block"
-            >
-                            Sign Up
-& Try it free
-            </a>
-            {/* Hamburger button */}
-            <button
-              onClick={() => setMobileOpen(!mobileOpen)}
-              className="relative z-50 flex h-10 w-10 items-center justify-center rounded-md border border-line md:hidden"
-              aria-label="Toggle menu"
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                {mobileOpen ? (
-                  <>
-                    <path d="M18 6 6 18" />
-                    <path d="m6 6 12 12" />
-                  </>
-                ) : (
-                  <>
-                    <path d="M4 6h16" />
-                    <path d="M4 12h16" />
-                    <path d="M4 18h16" />
-                  </>
-                )}
-              </svg>
-            </button>
-          </div>
-        </div>
+     <header className="sticky top-0 z-50 border-b border-line/70 bg-white/90 backdrop-blur-md shadow-sm">
 
-        {/* Mobile nav overlay */}
-        {mobileOpen && (
-          <div className="absolute inset-x-0 top-full z-40 border-b border-line bg-white px-6 pb-6 pt-2 shadow-lg md:hidden">
-            <nav className="flex flex-col gap-1">
-              {NAV_LINKS.map((l) => (
-                <a
-                  key={l.href}
-                  href={l.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="rounded-md px-3 py-2.5 font-body text-sm font-medium text-ink/70 transition hover:bg-mist hover:text-ink"
-                >
-                  {l.label}
-                </a>
-              ))}
-              <div className="dashed-rule my-3 text-line" />
-              <a href={LOGIN_URL} className="rounded-md px-3 py-2.5 font-body text-sm font-medium text-ink/70 transition hover:bg-mist hover:text-ink">
-                Sign in
-              </a>
-              <a
-                href={LOGIN_URL}
-                className="mt-1 rounded-md bg-plum px-5 py-3 text-center font-display text-sm font-semibold text-white transition hover:bg-plum-dark"
-              >
-                Try it free
-              </a>
-            </nav>
-          </div>
+  <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+
+    {/* Logo */}
+
+    <Link
+      href="/"
+      className="flex items-center gap-2 transition hover:opacity-90"
+    >
+      <Logo />
+    </Link>
+
+    {/* Desktop Navigation */}
+
+    <nav className="hidden items-center gap-8 lg:flex">
+
+      {NAV_LINKS.map((link) => (
+        <a
+          key={link.href}
+          href={link.href}
+          className="relative font-body text-sm font-medium text-ink/70 transition hover:text-plum"
+        >
+          {link.label}
+        </a>
+      ))}
+
+    </nav>
+
+    {/* Desktop Right */}
+
+    <div className="hidden items-center gap-3 lg:flex">
+
+      <a
+        href={LOGIN_URL}
+        className="rounded-lg px-4 py-2 text-sm font-medium text-ink/70 transition hover:bg-mist hover:text-ink"
+      >
+        Sign In
+      </a>
+
+      <a
+        href="#contact"
+        className="rounded-lg border border-line px-4 py-2 text-sm font-medium text-ink transition hover:bg-mist"
+      >
+        Request Demo
+      </a>
+
+      <a
+        href={SIGNUP_URL}
+        className="rounded-lg bg-plum px-6 py-3 font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-plum-dark hover:shadow-lg"
+      >
+        Start Free Trial
+      </a>
+
+    </div>
+
+    {/* Mobile */}
+
+    <button
+      onClick={() => setMobileOpen(!mobileOpen)}
+      className="flex h-11 w-11 items-center justify-center rounded-lg border border-line transition hover:bg-mist lg:hidden"
+      aria-label="Toggle menu"
+    >
+      <svg
+        width="22"
+        height="22"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        {mobileOpen ? (
+          <>
+            <path d="M18 6L6 18" />
+            <path d="M6 6l12 12" />
+          </>
+        ) : (
+          <>
+            <path d="M4 6h16" />
+            <path d="M4 12h16" />
+            <path d="M4 18h16" />
+          </>
         )}
-      </header>
+      </svg>
+    </button>
+
+  </div>
+
+  {/* Mobile Navigation */}
+
+  {mobileOpen && (
+
+    <div className="border-t border-line bg-white lg:hidden">
+
+      <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-6">
+
+        {NAV_LINKS.map((link) => (
+
+          <a
+            key={link.href}
+            href={link.href}
+            onClick={() => setMobileOpen(false)}
+            className="rounded-lg px-4 py-3 font-medium text-ink/70 transition hover:bg-mist hover:text-plum"
+          >
+            {link.label}
+          </a>
+
+        ))}
+
+        <div className="my-3 border-t border-line"></div>
+
+        <a
+          href={LOGIN_URL}
+          className="rounded-lg px-4 py-3 font-medium text-ink transition hover:bg-mist"
+        >
+          Sign In
+        </a>
+
+        <a
+          href="#contact"
+          className="rounded-lg border border-line px-4 py-3 text-center font-medium transition hover:bg-mist"
+        >
+          Request Demo
+        </a>
+
+        <a
+          href={SIGNUP_URL}
+          className="rounded-lg bg-plum px-5 py-3 text-center font-semibold text-white transition hover:bg-plum-dark"
+        >
+          Start Free Trial
+        </a>
+
+      </div>
+
+    </div>
+
+  )}
+
+</header>
 
 <section className="px-6 pb-16 pt-20 text-center sm:pt-28">
         <h1 className="mx-auto max-w-3xl font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
