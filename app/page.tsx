@@ -400,20 +400,20 @@ export default function Home() {
       <section id="how-it-works" className="border-t border-line bg-mist px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mb-14 max-w-2xl text-center sm:mx-auto">
-            <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-sky">PRICING</p>
+            <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-sky">Simple, Transparent Pricing</p>
             <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              Get started in three simple steps
+              Get start Now !!!
             </h2>
             <p className="mx-auto mt-4 max-w-xl font-body text-ink/60">
-              No complex installations or long training hours required. We get your branches live and synced fast.
+              Choose the plan that's right for your business. Start with a free trial and upgrade anytime as your business grows.
             </p>
           </div>
           <div className="grid gap-8 sm:grid-cols-3">
             <div className="rounded-xl border border-line bg-white p-8 relative overflow-hidden">
               <span className="font-mono text-5xl font-bold text-sky/10 absolute -right-2 -top-2 select-none">01</span>
-              <h3 className="font-display text-lg font-semibold text-ink">1. Register your account</h3>
+              <h3 className="font-display text-lg font-semibold text-ink">Bacis</h3>
               <p className="mt-3 font-body text-sm leading-relaxed text-ink/60">
-                Sign up in minutes. Configure your brand hierarchy, branches, and staff permissions from one master dashboard.
+               Basic: Best for small cafés and restaurants.$19/month
               </p>
             </div>
             <div className="rounded-xl border border-line bg-white p-8 relative overflow-hidden">
