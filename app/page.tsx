@@ -69,7 +69,7 @@ const PLANS = [
 
 const FAQS = [
   {
-    q: "Do you offer a free trial??",
+    q: "Do you offer a free trial?",
     a: "Yes! We offer a 1-month free demo account so you can explore Xola POS & ERP and experience its features before subscribing.",
   },
   {
@@ -78,40 +78,36 @@ const FAQS = [
   },
   {
     q: "Does it work without internet?",
-    a: "The till keeps ringing up sales offline and syncs everything the moment the connection comes back.",
+    a: "No. Xola is a fully cloud-based POS & ERP system and requires an active internet connection to operate.",
   },
   {
-    q: "Is Xola cloud-based??",
+    q: "Is Xola cloud-based?",
     a: "Yes. Xola is a fully cloud-based POS & ERP system, allowing you to access your business securely from anywhere with an internet connection.",
   },
   {
     q: "Can I manage multiple branches?",
     a: "Absolutely. Xola is designed for single restaurants, cafés, multiple branches, and franchises. Manage all your locations from one centralized dashboard.",
   },
-
-   {
+  {
     q: "Can I access Xola from any device?",
     a: "Yes. Xola works on desktops, laptops, tablets, and mobile devices through a modern web browser—no software installation required.",
   },
-
   {
-    q: "Can I migrate from my current POS?
+    q: "Can I migrate from my current POS?",
     a: "Yes. Our team can help you import your menu, inventory, customers, and other supported business data for a smooth transition.",
   },
-{
-    q: "Do you provide training and support"?
+  {
+    q: "Do you provide training and support?",
     a: "Yes. We provide onboarding, training, and ongoing support to ensure you get the most out of Xola.",
   },
-
   {
-    q: "Is my data secure"?
+    q: "Is my data secure?",
     a: "Yes. Each business has its own secure workspace with isolated data, regular backups, and role-based access controls to keep your information safe.",
   },
-{
-    q: "How do I get my free demo account"?
-    a: "Simply contact us or click Request a Free Demo. We'll create your 3-months free demo account so you can explore Xola with no obligation.",
+  {
+    q: "How do I get my free demo account?",
+    a: "Simply contact us or click 'Request a Free Demo.' We'll create your 1-month free demo account so you can explore Xola with no obligation.",
   },
-
 ];
 
 function Logo({ dark = false }: { dark?: boolean }) {
