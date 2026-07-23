@@ -753,12 +753,12 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="transition hover:text-plum">
+                 <Link href="/privacy" className="transition hover:text-plum">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="transition hover:text-plum">
+                  <Link href="/terms" className="transition hover:text-plum">
                     Terms of Service
                   </a>
                 </li>
