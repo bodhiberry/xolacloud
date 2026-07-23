@@ -557,7 +557,7 @@ export default function Home() {
         </div>
       </section>
 
-    <section
+   <section
   id="contact"
   className="border-t border-line bg-gradient-to-b from-mist to-white px-6 py-28"
 >
