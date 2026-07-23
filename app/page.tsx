@@ -404,7 +404,7 @@ export default function Home() {
       <section id="how-it-works" className="border-t border-line bg-mist px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mb-14 max-w-2xl text-center sm:mx-auto">
-            <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-sky">Simple Setup</p>
+            <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-sky">PRICING</p>
             <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
               Get started in three simple steps
             </h2>
@@ -504,7 +504,7 @@ export default function Home() {
             <p className="font-display text-xs font-semibold uppercase tracking-widest text-ink/40">Product</p>
             <ul className="mt-4 space-y-2 font-body text-sm text-ink/70">
               <li><a href="#features" className="hover:text-ink">Features</a></li>
-              <li><a href="#how-it-works" className="hover:text-ink">How It Works</a></li>
+              <li><a href="#how-it-works" className="hover:text-ink">Pricing</a></li>
               <li><a href="#faq" className="hover:text-ink">FAQ</a></li>
             </ul>
           </div>
