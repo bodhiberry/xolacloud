@@ -464,22 +464,22 @@ export default function Home() {
             <div>
               <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-sky">Get in touch</p>
               <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Ready to Get Started with Xola?
+               Ready to Get Started with Xola?
               </h2>
               <p className="mt-6 font-body text-base leading-relaxed text-ink/60">
-                Have questions about Xola or need help choosing the right solution? Send us a message, and our team will be happy to assist you.
+                Have questions about Xola or need help finding the right solution for your business? Send us a message, and our team will be happy to help. We'll get back to you as soon as possible.
               </p>
 
               <div className="mt-10 space-y-6">
                 <div>
                   <p className="font-display text-xs font-semibold uppercase tracking-widest text-ink/40">Email us</p>
-                  <a href="mailto:infobodhiberry@gmail.com" className="mt-1 inline-block font-body text-base font-medium text-plum hover:underline">
-                    infobodhiberry@gmail.com
+                  <a href="mailto:info@xolacloud.com" className="mt-1 inline-block font-body text-base font-medium text-plum hover:underline">
+                    info@xolacloud.com
                   </a>
                 </div>
                 <div>
                   <p className="font-display text-xs font-semibold uppercase tracking-widest text-ink/40">Call support</p>
-                  <p className="mt-1 font-body text-base font-medium text-ink">+977 9851058472</p>
+                  <p className="mt-1 font-body text-base font-medium text-ink">+9779763681795</p>
                 </div>
               </div>
             </div>
