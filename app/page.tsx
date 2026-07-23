@@ -70,7 +70,7 @@ const PLANS = [
 const FAQS = [
   {
     q: "Do you offer a free trial?",
-    a: "Yes! We offer a 1-month free demo account so you can explore Xola POS & ERP and experience its features before subscribing.",
+    a: "Yes! We offer a 3-month free demo account so you can explore Xola POS & ERP and experience its features before subscribing.",
   },
   {
     q: "What's included in the free demo?",
@@ -106,7 +106,7 @@ const FAQS = [
   },
   {
     q: "How do I get my free demo account?",
-    a: "Simply contact us or click 'Request a Free Demo.' We'll create your 1-month free demo account so you can explore Xola with no obligation.",
+    a: "Simply contact us or click 'Request a Free Demo.' We'll create your 3-month free demo account so you can explore Xola with no obligation.",
   },
 ];
 
@@ -537,25 +537,60 @@ export default function Home() {
   </div>
 </section>
 
-      <section id="faq" className="px-6 py-24">
-        <div className="mx-auto max-w-3xl">
-          <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-sky">FAQ</p>
-          <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-            Questions we get a lot.
-          </h2>
-          <div className="mt-10 divide-y divide-line">
-            {FAQS.map((f) => (
-              <details key={f.q} className="group py-5">
-                <summary className="flex cursor-pointer list-none items-center justify-between font-display text-base font-semibold text-ink">
-                  {f.q}
-                  <span className="ml-4 text-plum transition group-open:rotate-45">+</span>
-                </summary>
-                <p className="mt-3 max-w-2xl font-body text-sm leading-relaxed text-ink/60">{f.a}</p>
-              </details>
-            ))}
+    <section id="faq" className="bg-white px-6 py-28">
+  <div className="mx-auto max-w-4xl">
+
+    <div className="mx-auto mb-16 max-w-2xl text-center">
+
+      <span className="inline-flex rounded-full bg-sky/10 px-4 py-1 text-sm font-semibold text-sky">
+        Frequently Asked Questions
+      </span>
+
+      <h2 className="mt-6 font-display text-4xl font-bold text-ink sm:text-5xl">
+        Everything You Need to Know
+      </h2>
+
+      <p className="mt-5 text-lg leading-8 text-ink/60">
+        Still have questions? We've answered the most common ones below.
+      </p>
+
+    </div>
+
+    <div className="space-y-5">
+
+      {FAQS.map((f) => (
+        <details
+          key={f.q}
+          className="group rounded-2xl border border-line bg-white shadow-sm transition duration-300 hover:shadow-lg"
+        >
+
+          <summary className="flex cursor-pointer list-none items-center justify-between px-7 py-6">
+
+            <span className="pr-6 font-display text-lg font-semibold text-ink">
+              {f.q}
+            </span>
+
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-plum/10 text-xl font-bold text-plum transition duration-300 group-open:rotate-45 group-open:bg-plum group-open:text-white">
+              +
+            </span>
+
+          </summary>
+
+          <div className="border-t border-line px-7 pb-6 pt-5">
+
+            <p className="leading-7 text-ink/65">
+              {f.a}
+            </p>
+
           </div>
-        </div>
-      </section>
+
+        </details>
+      ))}
+
+    </div>
+
+  </div>
+</section>
 
    <section
   id="contact"
