@@ -418,16 +418,16 @@ export default function Home() {
             </div>
             <div className="rounded-xl border border-line bg-white p-8 relative overflow-hidden">
               <span className="font-mono text-5xl font-bold text-sky/10 absolute -right-2 -top-2 select-none">02</span>
-              <h3 className="font-display text-lg font-semibold text-ink">2. Load menu & stock</h3>
+              <h3 className="font-display text-lg font-semibold text-ink">Business</h3>
               <p className="mt-3 font-body text-sm leading-relaxed text-ink/60">
-                Import your items, departments, stock levels, and pricing. Custom-tailor menus for different branches if needed.
+               Ideal for growing cafés and restaurants with multiple locations, advanced inventory management, and enhanced business features. $39/month
               </p>
             </div>
             <div className="rounded-xl border border-line bg-white p-8 relative overflow-hidden">
               <span className="font-mono text-5xl font-bold text-sky/10 absolute -right-2 -top-2 select-none">03</span>
-              <h3 className="font-display text-lg font-semibold text-ink">3. Ring up sales</h3>
+              <h3 className="font-display text-lg font-semibold text-ink">Premium</h3>
               <p className="mt-3 font-body text-sm leading-relaxed text-ink/60">
-                Launch the till on any tablet, phone, or computer. Enjoy fast offline checkouts and automatic real-time sync.
+               Perfect for large businesses requiring advanced features, custom workflows, and enterprise-level support.$69/month
               </p>
             </div>
           </div>
