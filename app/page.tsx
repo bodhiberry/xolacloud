@@ -705,42 +705,177 @@ export default function Home() {
 
   </div>
 </section>
-      <footer className="border-t border-line bg-mist px-6 py-14">
-        <div className="mx-auto grid max-w-6xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          <div>
-            <Logo />
-            <p className="mt-4 max-w-xs font-body text-sm text-ink/50">
-              Multi-tenant point of sale and ERP for restaurant groups, retail chains, and the
-              platforms that run them.
-            </p>
-          </div>
-          <div>
-            <p className="font-display text-xs font-semibold uppercase tracking-widest text-ink/40">Product</p>
-            <ul className="mt-4 space-y-2 font-body text-sm text-ink/70">
-              <li><a href="#features" className="hover:text-ink">Features</a></li>
-              <li><a href="#how-it-works" className="hover:text-ink">Pricing</a></li>
-              <li><a href="#faq" className="hover:text-ink">FAQ</a></li>
-            </ul>
-          </div>
-          <div>
-            <p className="font-display text-xs font-semibold uppercase tracking-widest text-ink/40">Company</p>
-            <ul className="mt-4 space-y-2 font-body text-sm text-ink/70">
-              <li><a href="#contact" className="hover:text-ink">Contact</a></li>
-              <li><a href={LOGIN_URL} className="hover:text-ink">Sign in</a></li>
-            </ul>
-          </div>
-          <div>
-            <p className="font-display text-xs font-semibold uppercase tracking-widest text-ink/40">Legal</p>
-            <ul className="mt-4 space-y-2 font-body text-sm text-ink/70">
-              <li><a href="#" className="hover:text-ink">Privacy policy</a></li>
-              <li><a href="#" className="hover:text-ink">Terms of service</a></li>
-            </ul>
-          </div>
+     <footer className="border-t border-line bg-mist">
+
+  <div className="mx-auto max-w-6xl px-6 py-16">
+
+    <div className="grid gap-12 lg:grid-cols-[2fr_1fr_1fr_1fr]">
+
+      {/* Company */}
+
+      <div>
+
+        <a href="/" className="inline-block">
+          <Logo />
+        </a>
+
+        <p className="mt-5 max-w-sm font-body leading-7 text-ink/60">
+          Xola Cloud is an all-in-one cloud POS & ERP platform designed for
+          cafés, restaurants, food chains, and franchises. Manage sales,
+          inventory, staff, reporting, and multiple locations from anywhere.
+        </p>
+
+        <div className="mt-8 flex gap-4">
+
+          <a
+            href={SIGNUP_URL}
+            className="rounded-lg bg-plum px-5 py-3 font-semibold text-white transition hover:bg-plum-dark"
+          >
+            Start Free Trial
+          </a>
+
         </div>
-        <div className="mx-auto mt-12 max-w-6xl border-t border-line pt-6 font-mono text-xs text-ink/30">
-          © {new Date().getFullYear()} Xola Cloud. All rights reserved.
-        </div>
-      </footer>
+
+      </div>
+
+      {/* Product */}
+
+      <div>
+
+        <h3 className="font-display text-sm font-semibold uppercase tracking-widest text-ink">
+          Product
+        </h3>
+
+        <ul className="mt-5 space-y-3 text-sm text-ink/60">
+
+          <li>
+            <a href="#features" className="transition hover:text-plum">
+              Features
+            </a>
+          </li>
+
+          <li>
+            <a href="#pricing" className="transition hover:text-plum">
+              Pricing
+            </a>
+          </li>
+
+          <li>
+            <a href="#faq" className="transition hover:text-plum">
+              FAQ
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      {/* Company */}
+
+      <div>
+
+        <h3 className="font-display text-sm font-semibold uppercase tracking-widest text-ink">
+          Company
+        </h3>
+
+        <ul className="mt-5 space-y-3 text-sm text-ink/60">
+
+          <li>
+            <a href="#contact" className="transition hover:text-plum">
+              Contact
+            </a>
+          </li>
+
+          <li>
+            <a href={LOGIN_URL} className="transition hover:text-plum">
+              Sign In
+            </a>
+          </li>
+
+          <li>
+            <a href={SIGNUP_URL} className="transition hover:text-plum">
+              Create Account
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      {/* Support */}
+
+      <div>
+
+        <h3 className="font-display text-sm font-semibold uppercase tracking-widest text-ink">
+          Support
+        </h3>
+
+        <ul className="mt-5 space-y-3 text-sm text-ink/60">
+
+          <li>
+            <a href="mailto:info@xolacloud.com" className="transition hover:text-plum">
+              info@xolacloud.com
+            </a>
+          </li>
+
+          <li>
+            <a href="tel:+9779763681795" className="transition hover:text-plum">
+              +977 9763681795
+            </a>
+          </li>
+
+          <li>
+            <a href="#" className="transition hover:text-plum">
+              Privacy Policy
+            </a>
+          </li>
+
+          <li>
+            <a href="#" className="transition hover:text-plum">
+              Terms of Service
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    {/* Bottom */}
+
+    <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-line pt-8 text-sm text-ink/50 md:flex-row">
+
+      <p>
+        © {new Date().getFullYear()} <strong>Xola Cloud</strong>. All rights
+        reserved.
+      </p>
+
+      <div className="flex items-center gap-6">
+
+        <a href="/" className="transition hover:text-plum">
+          Home
+        </a>
+
+        <a href="#features" className="transition hover:text-plum">
+          Features
+        </a>
+
+        <a href="#pricing" className="transition hover:text-plum">
+          Pricing
+        </a>
+
+        <a href="#contact" className="transition hover:text-plum">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
     </main>
   );
 }
