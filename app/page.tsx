@@ -382,21 +382,19 @@ export default function Home() {
               Schedule a Free Demo
             </a>
           </div>
-          {/* Image Container */}
-          <div className="relative h-full w-full min-h-[400px] overflow-hidden rounded-2xl shadow-xl lg:min-h-[500px]">
-            <Image
-              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          {/* Updated Image Container */}
+          <div className="relative w-full min-h-[400px] overflow-hidden rounded-2xl shadow-xl lg:min-h-[500px]">
+            <img
+              src="/screenshots/order-menu.png"
               alt="Business team discussing system integration"
-              fill
-              className="object-cover"
+              className="absolute inset-0 h-full w-full object-cover"
             />
-            <div className="absolute inset-0 bg-forest/10 mix-blend-multiply"></div>
-            <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/10"></div>
+            {/* Subtle overlay to tie the image into your color theme */}
+            <div className="absolute inset-0 bg-forest/10 mix-blend-multiply pointer-events-none"></div>
+            <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/10 pointer-events-none"></div>
           </div>
         </div>
       </section>
-
-      <section id="pricing" className="border-t border-line bg-mist px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-sky">

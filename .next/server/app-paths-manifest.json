@@ -1,4 +1,7 @@
 {
-  "/icon/[[...__metadata_id__]]/route": "app/icon/[[...__metadata_id__]]/route.js",
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/contact/route": "app/api/contact/route.js",
+  "/page": "app/page.js",
+  "/icon/route": "app/icon/route.js",
+  "/apple-icon/route": "app/apple-icon/route.js"
 }
