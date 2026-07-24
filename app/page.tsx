@@ -358,15 +358,15 @@ export default function Home() {
       </a>
     </div>
     {/* Updated Image Container */}
-    <div className="relative h-full w-full min-h-[400px] overflow-hidden rounded-2xl shadow-xl lg:min-h-[500px]">
+    <div className="relative w-full min-h-[400px] overflow-hidden rounded-2xl shadow-xl lg:min-h-[500px]">
       <img
-        src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         alt="Business team discussing system integration"
         className="absolute inset-0 h-full w-full object-cover"
       />
       {/* Subtle overlay to tie the image into your color theme */}
-      <div className="absolute inset-0 bg-forest/10 mix-blend-multiply"></div>
-      <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/10"></div>
+      <div className="absolute inset-0 bg-forest/10 mix-blend-multiply pointer-events-none"></div>
+      <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/10 pointer-events-none"></div>
     </div>
   </div>
 </section>
