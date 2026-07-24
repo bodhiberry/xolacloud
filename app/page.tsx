@@ -360,7 +360,7 @@ export default function Home() {
     {/* Updated Image Container */}
     <div className="relative w-full min-h-[400px] overflow-hidden rounded-2xl shadow-xl lg:min-h-[500px]">
       <img
-        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
+        src="/screenshots/order-menu.png"
         alt="Business team discussing system integration"
         className="absolute inset-0 h-full w-full object-cover"
       />
