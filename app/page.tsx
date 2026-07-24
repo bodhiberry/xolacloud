@@ -395,6 +395,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section id="pricing" className="border-t border-line bg-mist px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-sky">
@@ -753,12 +755,12 @@ export default function Home() {
                 <li>
                  <Link href="/privacy" className="transition hover:text-plum">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link href="/terms" className="transition hover:text-plum">
                     Terms of Service
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
