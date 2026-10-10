@@ -27,7 +27,8 @@ const bodyFont = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://xolacloud.com"),
+  // xolacloud.com redirects to www, so www is the address Google should index.
+  metadataBase: new URL("https://www.xolacloud.com"),
 
   title: "Xola Cloud | Restaurant POS & ERP Software for Cafés & Restaurants",
 
@@ -85,7 +86,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://xolacloud.com",
+    url: "/",
     siteName: "Xola Cloud",
     title: "Xola Cloud | Restaurant POS & ERP Software for Cafés & Restaurants",
     description:
